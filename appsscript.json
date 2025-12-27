@@ -1,9 +1,9 @@
 {
   "timeZone": "Asia/Tokyo",
-  "dependencies": {
-  },
+  "dependencies": {},
   "exceptionLogging": "STACKDRIVER",
   "runtimeVersion": "V8",
+  "urlFetchWhitelist": ["https://api.notion.com/"],
   "oauthScopes": [
     "https://www.googleapis.com/auth/calendar.addons.execute",
     "https://www.googleapis.com/auth/calendar.readonly",
@@ -13,7 +13,7 @@
   "addOns": {
     "common": {
       "name": "My Calendar Add-on",
-      "logoUrl": "https://www.gstatic.com/images/icons/material/system/1x/calendar_today_black_48dp.png"
+      "logoUrl": "https://raw.githubusercontent.com/kazscape/gcal-event-to-notion/main/icon.png"
     },
     "calendar": {
       "homepageTrigger": {
