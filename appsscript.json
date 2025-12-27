@@ -1,0 +1,27 @@
+{
+  "timeZone": "Asia/Tokyo",
+  "dependencies": {
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/calendar.addons.execute",
+    "https://www.googleapis.com/auth/calendar.readonly",
+    "https://www.googleapis.com/auth/script.locale",
+    "https://www.googleapis.com/auth/script.external_request"
+  ],
+  "addOns": {
+    "common": {
+      "name": "My Calendar Add-on",
+      "logoUrl": "https://www.gstatic.com/images/icons/material/system/1x/calendar_today_black_48dp.png"
+    },
+    "calendar": {
+      "homepageTrigger": {
+        "runFunction": "onHomepageOpen"
+      },
+      "eventOpenTrigger": {
+        "runFunction": "onEventOpen"
+      }
+    }
+  }
+}
